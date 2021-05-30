@@ -9,7 +9,7 @@ import App from './App';
     const server = express();
 
     server.use(bodyParser.json());
-    server.use(cors({ origin: 'http://localhost:3000' }));
+    server.use(cors({ origin: '*' }));
 
     const app = new App(server);
     await app.init();
