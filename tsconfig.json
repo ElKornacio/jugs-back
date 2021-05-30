@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "target": "ES2020",
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "declaration": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "outDir": "./dist/",
+        "noErrorTruncation": true
+    },
+    "include": [
+        "src/"
+    ]
+}
