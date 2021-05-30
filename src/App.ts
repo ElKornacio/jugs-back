@@ -1,8 +1,10 @@
 import express from 'express';
-import FastMathBasedSolver from './task/solvers/FastMathBasedSolver';
-import SlowestRecursiveSolver from './task/solvers/SlowestRecursiveSolver';
-import AbstractSolver from './task/types/AbstractSolver';
-import isKeyOf from './task/utils/isKeyOf';
+import ConsolePrinter from 'jugs-task-package/dist/printers/ConsolePrinter';
+import FastMathBasedSolver from 'jugs-task-package/dist/solvers/FastMathBasedSolver';
+import SlowestRecursiveSolver from 'jugs-task-package/dist/solvers/SlowestRecursiveSolver';
+import TaskProcessor from 'jugs-task-package/dist/TaskProcessor';
+import AbstractSolver from 'jugs-task-package/dist/types/AbstractSolver';
+import isKeyOf from 'jugs-task-package/dist/utils/isKeyOf';
 
 export default class App {
 
@@ -33,7 +35,7 @@ export default class App {
                 return res.status(400).end('Request is invalid');
             }
 
-            const solver = new solversMap[solverName]();
+            const solver: AbstractSolver<any> = new solversMap[solverName]();
 
             const solution = solver.getBestSolution({ X, Y, Z });
 

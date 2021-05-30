@@ -3,9 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const FastMathBasedSolver_1 = __importDefault(require("./task/solvers/FastMathBasedSolver"));
-const SlowestRecursiveSolver_1 = __importDefault(require("./task/solvers/SlowestRecursiveSolver"));
-const isKeyOf_1 = __importDefault(require("./task/utils/isKeyOf"));
+const FastMathBasedSolver_1 = __importDefault(require("jugs-task-package/dist/solvers/FastMathBasedSolver"));
+const SlowestRecursiveSolver_1 = __importDefault(require("jugs-task-package/dist/solvers/SlowestRecursiveSolver"));
+const isKeyOf_1 = __importDefault(require("jugs-task-package/dist/utils/isKeyOf"));
 class App {
     constructor(server) {
         this.server = server;

@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ConsolePrinter_1 = __importDefault(require("./task/printers/ConsolePrinter"));
-const FastMathBasedSolver_1 = __importDefault(require("./task/solvers/FastMathBasedSolver"));
-const SlowestRecursiveSolver_1 = __importDefault(require("./task/solvers/SlowestRecursiveSolver"));
-const SlowSimulationalSolver_1 = __importDefault(require("./task/solvers/SlowSimulationalSolver"));
-const UnhurriedSemiSimulationalSolver_1 = __importDefault(require("./task/solvers/UnhurriedSemiSimulationalSolver"));
-const TaskProcessor_1 = __importDefault(require("./task/TaskProcessor"));
+const ConsolePrinter_1 = __importDefault(require("jugs-task-package/dist/printers/ConsolePrinter"));
+const FastMathBasedSolver_1 = __importDefault(require("jugs-task-package/dist/solvers/FastMathBasedSolver"));
+const SlowestRecursiveSolver_1 = __importDefault(require("jugs-task-package/dist/solvers/SlowestRecursiveSolver"));
+const SlowSimulationalSolver_1 = __importDefault(require("jugs-task-package/dist/solvers/SlowSimulationalSolver"));
+const UnhurriedSemiSimulationalSolver_1 = __importDefault(require("jugs-task-package/dist/solvers/UnhurriedSemiSimulationalSolver"));
+const TaskProcessor_1 = __importDefault(require("jugs-task-package/dist/TaskProcessor"));
 (async () => {
     const printer = new ConsolePrinter_1.default();
     const taskProcessor = new TaskProcessor_1.default(printer);
