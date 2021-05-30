@@ -10,7 +10,7 @@ const App_1 = __importDefault(require("./App"));
 (async () => {
     const server = express_1.default();
     server.use(body_parser_1.default.json());
-    server.use(cors_1.default({ origin: 'http://localhost:3000' }));
+    server.use(cors_1.default({ origin: '*' }));
     const app = new App_1.default(server);
     await app.init();
     server.listen(8185, () => {
